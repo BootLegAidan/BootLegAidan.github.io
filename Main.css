@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Anniversary Facebook-Karen Geometrical-Thing Money" "Desmos-Colors Discord-Letters Rainbow-Highlight ." ". . . .";
+}
+
+.Anniversary { grid-area: Anniversary; }
+
+.Facebook-Karen { grid-area: Facebook-Karen; }
+
+.Geometrical-Thing { grid-area: Geometrical-Thing; }
+
+.Money { grid-area: Money; }
+
+.Desmos-Colors { grid-area: Desmos-Colors; }
+
+.Discord-Letters { grid-area: Discord-Letters; }
+
+.Rainbow-Highlight { grid-area: Rainbow-Highlight; }
