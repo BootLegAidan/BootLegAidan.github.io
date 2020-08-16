@@ -1,9 +1,21 @@
+:root {
+  --segWidth: 1fr
+}
+
+.projects {
+  border: 1px solid;
+  text-align: center;
+}
+img {
+  width: var(--segWidth)
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-template-areas: "Anniversary Facebook-Karen Geometrical-Thing Money" "Desmos-Colors Discord-Letters Rainbow-Highlight ." ". . . .";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Anniversary Facebook-Karen" "Geometrical-Thing Money" "Desmos-Colors Discord-Letters" "Rainbow-Highlight ." ". ." ". .";
 }
 
 .Anniversary { grid-area: Anniversary; }
