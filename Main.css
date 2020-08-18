@@ -15,7 +15,7 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  grid-template-areas: "Anniversary Facebook-Karen" "Geometrical-Thing Money" "Desmos-Colors Discord-Letters" "Rainbow-Highlight ." ". ." ". .";
+  grid-template-areas: "Anniversary Facebook-Karen" "Geometrical-Thing Money" "Desmos-Colors Discord-Letters" "Rainbow-Highlight HexClock" ". ." ". .";
 }
 
 .Anniversary { grid-area: Anniversary; }
@@ -31,3 +31,5 @@ img {
 .Discord-Letters { grid-area: Discord-Letters; }
 
 .Rainbow-Highlight { grid-area: Rainbow-Highlight; }
+
+.HexClock { grid-area: HexClock; }
