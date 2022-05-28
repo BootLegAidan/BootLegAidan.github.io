@@ -1,31 +1,54 @@
-:root {
-  --segWidth: 1fr
-}
-
 .projects {
   border: 1px solid;
   text-align: center;
+  box-sizing: content-box;
+  width: 45%;
+  display: inline-block;
 }
+
 img {
-  width: var(--segWidth)
+  width:100%
 }
 
 body {
   margin: 0px;
+  background-color: black;
 }
 
-div.projects {}
-/* .Facebook-Karen { float:right }
+a {
+  color: white
+}
 
-.Geometrical-Thing { grid-area: Geometrical-Thing; }
+h1 {
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+  color: white;
+}
 
-.Money { grid-area: Money; }
+.projects img {
+  position: relative;
+  top: 1em;
+  z-index: -1
+}
 
-.Desmos-Colors { grid-area: Desmos-Colors; }
+.projects a {
+  display: block;
+  color: transparent;
+  transition: 0.1s color;
+}
 
-.Discord-Letters { grid-area: Discord-Letters; }
+.text-only > a {
+  color: white !important;
+  padding-top: auto;
+}
 
-.Rainbow-Highlight { grid-area: Rainbow-Highlight; }
+.projects a:hover {
+  color: white;
+  text-shadow: 1px 1px 5px black, 1px 1px 5px black, 1px 1px 5px black
+}
 
-.HexClock { grid-area: HexClock; }
-*/
+.project-container {
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
