@@ -10,17 +10,12 @@ img {
   width: var(--segWidth)
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas: "Anniversary Facebook-Karen" "Geometrical-Thing Money" "Desmos-Colors Discord-Letters" "Rainbow-Highlight HexClock" ". ." ". .";
+body {
+  margin: 0px;
 }
 
-.Anniversary { grid-area: Anniversary; }
-
-.Facebook-Karen { grid-area: Facebook-Karen; }
+div.projects {}
+/* .Facebook-Karen { float:right }
 
 .Geometrical-Thing { grid-area: Geometrical-Thing; }
 
@@ -33,3 +28,4 @@ img {
 .Rainbow-Highlight { grid-area: Rainbow-Highlight; }
 
 .HexClock { grid-area: HexClock; }
+*/
