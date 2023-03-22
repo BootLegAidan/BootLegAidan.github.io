@@ -1,4 +1,8 @@
 const projects = {
+  "Overly Complicated Calendar": {
+    link: 'https://bootlegaidan.github.io/Calendar/',
+    text: 'Github Page'
+  },
   "HTML Visualizer": {
     link: 'https://github.com/BootLegAidan/HTML-Visualizer',
     text: 'Github Repo'
