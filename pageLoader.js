@@ -1,4 +1,8 @@
 const projects = {
+  "IP Grabber": {
+    link: 'https://github.com/BootLegAidan/authorize',
+    text: 'Github Repo'
+  },
   "Overly Complicated Calendar": {
     link: 'https://bootlegaidan.github.io/Calendar/',
     text: 'Github Page'
