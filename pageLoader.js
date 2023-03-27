@@ -7,7 +7,7 @@ const projects = {
     link: 'https://bootlegaidan.github.io/Calendar/',
     text: 'Github Page'
   },
-  "HTML Visualizer": {
+  "HTML Music Visualizer": {
     link: 'https://github.com/BootLegAidan/HTML-Visualizer',
     text: 'Github Repo'
   },
