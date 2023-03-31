@@ -27,10 +27,6 @@ a:hover p:hover {
 	color: #0099ff;
 }
 
-p {
-	margin: 0 0 2em 0;
-}
-
 h1, h2{
 	color: #ffffff;
 	font-weight: 300;
@@ -50,9 +46,15 @@ h2 {
 	width: 1em;
 }
 
+.link {
+	break-before: always;
+
+}
+
 .contact {
 	display: flex;
 	justify-content: space-around;
+	flex-direction: column;
 }
 /* Poptrox Popup */
 
@@ -67,19 +69,22 @@ h2 {
 	height: 8em;
 	margin-top: -4em;
 	opacity: 0;
-	position: absolute;
+	position:fixed;
 	top: 50%;
 	width: 6em;
 	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-top-left-radius: 25%;
+	border-bottom-left-radius: 25%;
 }
 
 .poptrox-popup .nav-previous {
 	transform: scaleX(-1);
-	left: 0;
+	left: 0em;
 }
 
 .poptrox-popup .nav-next {
-	right: 0;
+	right: 0em;
 }
 
 .poptrox-popup .caption {
@@ -96,7 +101,18 @@ h2 {
 
 .poptrox-popup .caption h2{
 	margin: 0 0 0.5em 0;
+	position: absolute;
+	top: 100%;
+	left: 0%;
+	width: 100%;
+
 }
+
+.poptrox-popup .caption a,
+.poptrox-popup .caption p {
+	text-align: center;
+}
+
 
 .poptrox-popup .caption p {
 	color: #ffffff;
@@ -110,6 +126,10 @@ h2 {
 .poptrox-popup:hover .nav-previous:hover,
 .poptrox-popup:hover .nav-next:hover {
 	opacity: 1;
+}
+
+.poptrox-overlay, .pic, .caption {
+	cursor: default !important
 }
 
 

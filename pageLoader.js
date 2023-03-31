@@ -1,7 +1,8 @@
 const projects = {
   "IP Grabber": {
     link: 'https://github.com/BootLegAidan/authorize',
-    text: 'Github Repo'
+    text: 'Github Repo',
+    text2: 'Clicking the link does not log your IP'
   },
   "Overly Complicated Calendar": {
     link: 'https://bootlegaidan.github.io/Calendar/',
@@ -9,11 +10,15 @@ const projects = {
   },
   "HTML Music Visualizer": {
     link: 'https://github.com/BootLegAidan/HTML-Visualizer',
-    text: 'Github Repo'
+    text: 'Github Repo',
+    link2: 'https://bootlegaidan.github.io/HTML-Visualizer/',
+    text2: 'Github Page'
   },
   "Shared Scripts": {
     link: 'https://github.com/BootLegAidan/SharedScripts',
-    text: 'Github Repo'
+    text: 'Github Repo',
+    link2: 'https://bootlegaidan.github.io/SharedScripts/',
+    text2: 'Github Page'
   },
   "Clickpocalypse 2 Decompilation": {
     link: 'https://github.com/BootLegAidan/Clickpocalypse2DecompilationProject',
@@ -96,27 +101,40 @@ const projects = {
 let container = document.getElementById('main')
 container.innerHTML = ''
 Object.entries(projects).forEach(([name,data], i) => {
-  let articleEl = document.createElement('article')
-  articleEl.classList.add('thumb')
+  let mainEl = document.createElement('article')
+  mainEl.classList.add('thumb')
 
-  let a1El = document.createElement('a')
-  a1El.href = `images/fulls/${name.replaceAll(' ','')}.jpg`
-  a1El.classList.add('image')
+  let thumbnail = document.createElement('a')
+  thumbnail.href = `images/fulls/${name.replaceAll(' ','')}.jpg`
+  thumbnail.classList.add('image')
 
-  let imgEl = document.createElement('img')
-  imgEl.src = `images/thumbs/${name.replaceAll(' ','')}.jpg`
-  a1El.append(imgEl)
-  articleEl.append(a1El)
+  let thumbImg = document.createElement('img')
+  thumbImg.src = `images/thumbs/${name.replaceAll(' ','')}.jpg`
+  thumbnail.append(thumbImg)
+  mainEl.append(thumbnail)
 
-  let h2El = document.createElement('h2')
-  h2El.innerText = name
-  articleEl.append(h2El)
+  let title = document.createElement('h2')
+  title.innerText = name
+  mainEl.append(title)
 
-  let a2El = document.createElement('a')
-  a2El.href = data.link
-  let pEl = document.createElement('p')
-  pEl.innerText = data.text
-  a2El.append(pEl)
-  articleEl.append(a2El)
-  container.append(articleEl)
+  let link1 = document.createElement('a')
+  link1.href = data.link
+  let link1text = document.createElement('p')
+  link1text.innerHTML = data.text
+  link1.append(link1text)
+  mainEl.append(link1)
+
+  if (data.link2 && data.text2) {
+    let link2 = document.createElement('a')
+    link2.href = data.link2
+    let link2text = document.createElement('p')
+    link2text.innerHTML = data.text2
+    link2.append(link2text)
+    mainEl.append(link2)
+  } else if (data.text2) {
+    let text2 = document.createElement('p')
+    text2.innerHTML = data.text2
+    mainEl.append(text2)
+  }
+  container.append(mainEl)
 });
