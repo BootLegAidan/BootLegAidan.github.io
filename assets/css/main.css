@@ -11,6 +11,7 @@
 
 html {
 	box-sizing: border-box;
+	background: #1f2224
 }
 
 *, *:before, *:after {
@@ -246,4 +247,19 @@ body {
 		min-height: 18em;
 		width: 100%;
 	}
+}
+
+#jsWarning {
+	display: flex;
+	position: absolute;
+	z-index: 99999;
+	background-color: #1f2224;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	color: white;
+	/* height: 100% */
+}
+#jsWarning a {
+	color: white
 }

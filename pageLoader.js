@@ -1,4 +1,13 @@
+document.getElementById('jsWarning').remove()
 const projects = {
+  "Springy Particle Physics": {
+    link: 'https://bootlegaidan.github.io/Springy-Particle-Physics/',
+    text: 'Github Page'
+  },
+  "Mouse Forcefield": {
+    link: "https://bootlegaidan.github.io/Mouse-Forcefield/",
+    text: 'Github Page'
+  },
   "IP Grabber": {
     link: 'https://github.com/BootLegAidan/authorize',
     text: 'Github Repo',
